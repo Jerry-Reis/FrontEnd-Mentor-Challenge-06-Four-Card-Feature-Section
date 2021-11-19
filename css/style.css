@@ -27,6 +27,7 @@ html {
 
 body {
     font-size: 1.5rem;
+    background-color: var(--very-light-gray);
 }
 
 main {
@@ -41,18 +42,133 @@ main {
 
 .top {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+
+    color: var(--very-dark-blue);
+}
+
+.top span {
+    font-weight: 200;
+}
+
+.top h3 {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+
+    max-width: 400px;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
 }
 
 .cards {
     display: flex;
     align-items: center;
+
+    margin: 0rem 2.5rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+
+    background-color: #fff;
 }
 
 .card-image {
     align-self: flex-end;
+}
+
+.card-title {
+    margin-bottom: 4.5rem;
+}
+
+.card-title h2 {
+    margin-bottom: 1.2rem;
+    color: var(--very-dark-blue);
+}
+
+.card-title p {
+    color: var(--grayish-blue);
+}
+
+.card-single {
+    max-width: 370px;
+    max-height: 260px;
+
+    padding: 3.5rem 3.5rem 3.2rem 3.2rem;
+
+    border-top: 0.4rem solid;
+    border-radius: 0.4rem;
+
+    box-shadow: 0px 10px 40px -20px var(--grayish-blue);
+}
+
+.card-single:nth-child(1) {
+    border-top-color: var(--cyan);
+}
+
+.card-double .card-single:nth-child(1) {
+    border-top-color: var(--red);
+}
+
+.card-double .card-single:nth-child(2) {
+    border-top-color: var(--orange);
+}
+
+.card-single:nth-child(3) {
+    border-top-color: var(--blue);
+}
+
+.card-double {
+    margin: 0rem 3.2rem;
+
+    background-color: var(--very-light-gray);
+}
+
+.card-double .card-single:nth-child(1) {
+    margin-bottom: 3.2rem;
+}
+
+@media (max-width: 1250px) {
+    main {
+        height: auto;
+
+        margin: 9.5rem 0rem;
+    }
+
+    .top h1 {
+        font-size: 2.5rem;
+    }
+
+    .top h3 {
+        padding: 0rem 6rem;
+
+        font-size: 1.3rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card-single {
+        margin-bottom: 2.5rem;
+    }
+
+    .card-double {
+        margin: 0;
+    }
+
+    .card-title {
+        margin-bottom: auto;
+    }
 }
