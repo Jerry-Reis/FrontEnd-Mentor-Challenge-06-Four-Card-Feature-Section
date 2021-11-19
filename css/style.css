@@ -59,7 +59,7 @@ main {
     font-weight: 200;
 }
 
-.top h3 {
+.top h2 {
     margin-top: 2rem;
     margin-bottom: 7rem;
 
@@ -150,7 +150,7 @@ main {
         font-size: 2.5rem;
     }
 
-    .top h3 {
+    .top h2 {
         padding: 0rem 6rem;
 
         font-size: 1.3rem;
